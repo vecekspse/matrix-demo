@@ -23,6 +23,7 @@ ROWS = 64
 COLS = 64
 CHAIN = 1
 SPEED = 30.0               # rychlost textu v px/s
+NO_HARDWARE_PULSE = True   # = --led-no-hardware-pulse (neni potreba vypinat zvuk)
 
 FONT_CANDIDATES = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -69,6 +70,8 @@ def parse_args():
     p.add_argument("--cols", type=int, default=COLS)
     p.add_argument("--chain", type=int, default=CHAIN)
     p.add_argument("--speed", type=float, default=SPEED)
+    p.add_argument("--led-no-hardware-pulse", dest="no_hw_pulse", action="store_true",
+                   default=NO_HARDWARE_PULSE)
     return p.parse_args()
 
 
@@ -81,6 +84,7 @@ def main():
     opts.hardware_mapping = args.gpio_mapping
     opts.gpio_slowdown = args.slowdown_gpio
     opts.brightness = args.brightness
+    opts.disable_hardware_pulsing = args.no_hw_pulse
     matrix = RGBMatrix(options=opts)
     canvas = matrix.CreateFrameCanvas()
 
