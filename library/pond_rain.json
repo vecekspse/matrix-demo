@@ -1,0 +1,58 @@
+{
+  "name": "pond_rain",
+  "prompt": "rain drops making ripples on a dark pond",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T16:56:40+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.129,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1060,
+    "output_tokens": 1363
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 26.8,
+      "usage": {
+        "input_tokens": 1060,
+        "output_tokens": 1363
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.129,
+        "p95_ms": 0.231,
+        "max_ms": 0.357,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.514,
+        "black_frames": 0,
+        "mean_level": 32.5
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.129,
+      "p95_ms": 0.231,
+      "max_ms": 0.357,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 0.514,
+      "black_frames": 0,
+      "mean_level": 32.5
+    },
+    "speedup": 4.0,
+    "name": "pond_rain",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

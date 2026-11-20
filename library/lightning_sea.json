@@ -1,0 +1,58 @@
+{
+  "name": "lightning_sea",
+  "prompt": "lightning storm over the sea",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T17:56:49+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.2,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1056,
+    "output_tokens": 1930
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 36.2,
+      "usage": {
+        "input_tokens": 1056,
+        "output_tokens": 1930
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.2,
+        "p95_ms": 0.598,
+        "max_ms": 0.744,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.798,
+        "black_frames": 0,
+        "mean_level": 80.8
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.2,
+      "p95_ms": 0.598,
+      "max_ms": 0.744,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 0.798,
+      "black_frames": 0,
+      "mean_level": 80.8
+    },
+    "speedup": 4.0,
+    "name": "lightning_sea",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

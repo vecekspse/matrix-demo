@@ -1,0 +1,58 @@
+{
+  "name": "sunrise_hills",
+  "prompt": "sunrise over hills",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T16:06:48+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.284,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1054,
+    "output_tokens": 1884
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 35.3,
+      "usage": {
+        "input_tokens": 1054,
+        "output_tokens": 1884
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.284,
+        "p95_ms": 0.369,
+        "max_ms": 0.68,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 1.137,
+        "black_frames": 0,
+        "mean_level": 22.8
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.284,
+      "p95_ms": 0.369,
+      "max_ms": 0.68,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 1.137,
+      "black_frames": 0,
+      "mean_level": 22.8
+    },
+    "speedup": 4.0,
+    "name": "sunrise_hills",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

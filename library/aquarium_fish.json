@@ -1,0 +1,58 @@
+{
+  "name": "aquarium_fish",
+  "prompt": "aquarium with a few simple fish and bubbles",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T17:46:43+01:00",
+  "fps": 20,
+  "duration": 60.0,
+  "mean_frame_ms": 1.133,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1059,
+    "output_tokens": 1531
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 29.5,
+      "usage": {
+        "input_tokens": 1059,
+        "output_tokens": 1531
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 1.133,
+        "p95_ms": 1.36,
+        "max_ms": 1.628,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 4.532,
+        "black_frames": 0,
+        "mean_level": 12.5
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 1.133,
+      "p95_ms": 1.36,
+      "max_ms": 1.628,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 4.532,
+      "black_frames": 0,
+      "mean_level": 12.5
+    },
+    "speedup": 4.0,
+    "name": "aquarium_fish",
+    "fps": 20,
+    "duration": 60.0
+  }
+}

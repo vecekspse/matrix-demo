@@ -1,0 +1,86 @@
+{
+  "name": "code_rain",
+  "prompt": "falling green code rain",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T15:17:19+01:00",
+  "fps": 20,
+  "duration": 20.0,
+  "mean_frame_ms": 0.106,
+  "attempts": 3,
+  "usage": {
+    "input_tokens": 5661,
+    "output_tokens": 3179
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 30.0,
+      "usage": {
+        "input_tokens": 1055,
+        "output_tokens": 1555
+      },
+      "ok": false,
+      "errors": [
+        "t=0.000: render vrátil tvar (2, 64, 64, 3), očekává se (64, 64, 3)"
+      ],
+      "warnings": [],
+      "stats": {}
+    },
+    {
+      "attempt": 2,
+      "seconds": 18.0,
+      "usage": {
+        "input_tokens": 2675,
+        "output_tokens": 811
+      },
+      "ok": false,
+      "errors": [
+        "t=0.000: render vrátil tvar (2, 64, 64, 3), očekává se (64, 64, 3)"
+      ],
+      "warnings": [],
+      "stats": {}
+    },
+    {
+      "attempt": 3,
+      "seconds": 17.9,
+      "usage": {
+        "input_tokens": 1931,
+        "output_tokens": 813
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.106,
+        "p95_ms": 0.138,
+        "max_ms": 0.214,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.423,
+        "black_frames": 0,
+        "mean_level": 21.0
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.106,
+      "p95_ms": 0.138,
+      "max_ms": 0.214,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 0.423,
+      "black_frames": 0,
+      "mean_level": 21.0
+    },
+    "speedup": 4.0,
+    "name": "code_rain",
+    "fps": 20,
+    "duration": 20.0
+  }
+}

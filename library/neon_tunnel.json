@@ -1,0 +1,62 @@
+{
+  "name": "neon_tunnel",
+  "prompt": "endless neon tunnel",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T16:16:32+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.341,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1054,
+    "output_tokens": 897
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 18.9,
+      "usage": {
+        "input_tokens": 1054,
+        "output_tokens": 897
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "obraz je hodně světlý (průměr 126/255) – na LED matici je lepší tmavé pozadí"
+      ],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.341,
+        "p95_ms": 0.386,
+        "max_ms": 0.502,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 1.363,
+        "black_frames": 0,
+        "mean_level": 126.0
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "obraz je hodně světlý (průměr 126/255) – na LED matici je lepší tmavé pozadí"
+    ],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.341,
+      "p95_ms": 0.386,
+      "max_ms": 0.502,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 1.363,
+      "black_frames": 0,
+      "mean_level": 126.0
+    },
+    "speedup": 4.0,
+    "name": "neon_tunnel",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

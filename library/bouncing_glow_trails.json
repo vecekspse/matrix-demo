@@ -1,0 +1,83 @@
+{
+  "name": "bouncing_glow_trails",
+  "prompt": "bouncing glowing balls leaving trails",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T15:27:30+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 2.104,
+  "attempts": 2,
+  "usage": {
+    "input_tokens": 4163,
+    "output_tokens": 4034
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 36.7,
+      "usage": {
+        "input_tokens": 1056,
+        "output_tokens": 1966
+      },
+      "ok": false,
+      "errors": [
+        "render je pomalý: průměr 9.03 ms, limit 5.00 ms (odhad na Pi 36.1 ms při 20 FPS) – zjednoduš výpočet, předpočítej v init(), vektorizuj"
+      ],
+      "warnings": [
+        "render obsahuje vnořené cykly – pravděpodobně cyklus přes pixely; použij vektorizovaný numpy (np.mgrid, np.sin, ...)"
+      ],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 9.034,
+        "p95_ms": 9.769,
+        "max_ms": 11.341,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 36.136,
+        "black_frames": 0,
+        "mean_level": 1.0
+      }
+    },
+    {
+      "attempt": 2,
+      "seconds": 39.0,
+      "usage": {
+        "input_tokens": 3107,
+        "output_tokens": 2068
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 2.104,
+        "p95_ms": 2.516,
+        "max_ms": 3.043,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 8.416,
+        "black_frames": 56,
+        "mean_level": 0.3
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 2.104,
+      "p95_ms": 2.516,
+      "max_ms": 3.043,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 8.416,
+      "black_frames": 56,
+      "mean_level": 0.3
+    },
+    "speedup": 4.0,
+    "name": "bouncing_glow_trails",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

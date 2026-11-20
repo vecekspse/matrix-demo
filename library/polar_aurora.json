@@ -1,0 +1,58 @@
+{
+  "name": "polar_aurora",
+  "prompt": "polar aurora waving over a dark horizon",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T16:26:38+01:00",
+  "fps": 20,
+  "duration": 40.0,
+  "mean_frame_ms": 0.297,
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 1059,
+    "output_tokens": 1278
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 25.4,
+      "usage": {
+        "input_tokens": 1059,
+        "output_tokens": 1278
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.297,
+        "p95_ms": 0.398,
+        "max_ms": 0.589,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 1.187,
+        "black_frames": 0,
+        "mean_level": 29.3
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.297,
+      "p95_ms": 0.398,
+      "max_ms": 0.589,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 1.187,
+      "black_frames": 0,
+      "mean_level": 29.3
+    },
+    "speedup": 4.0,
+    "name": "polar_aurora",
+    "fps": 20,
+    "duration": 40.0
+  }
+}

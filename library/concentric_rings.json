@@ -1,0 +1,72 @@
+{
+  "name": "concentric_rings",
+  "prompt": "concentric color rings expanding from the center",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T17:16:55+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.298,
+  "attempts": 2,
+  "usage": {
+    "input_tokens": 3307,
+    "output_tokens": 2026
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 22.7,
+      "usage": {
+        "input_tokens": 1059,
+        "output_tokens": 1115
+      },
+      "ok": false,
+      "errors": [
+        "výjimka v render(state, t=0.000) (řádek 81): ValueError: operands could not be broadcast together with shapes (64,64,3) (64,64) "
+      ],
+      "warnings": [],
+      "stats": {}
+    },
+    {
+      "attempt": 2,
+      "seconds": 19.8,
+      "usage": {
+        "input_tokens": 2248,
+        "output_tokens": 911
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.298,
+        "p95_ms": 0.359,
+        "max_ms": 0.464,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 1.192,
+        "black_frames": 0,
+        "mean_level": 30.9
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.298,
+      "p95_ms": 0.359,
+      "max_ms": 0.464,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 1.192,
+      "black_frames": 0,
+      "mean_level": 30.9
+    },
+    "speedup": 4.0,
+    "name": "concentric_rings",
+    "fps": 20,
+    "duration": 30.0
+  }
+}

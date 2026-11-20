@@ -1,0 +1,87 @@
+{
+  "name": "gentle_snowfall",
+  "prompt": "gentle snowfall over a dark blue night",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T17:07:01+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 2.622,
+  "attempts": 2,
+  "usage": {
+    "input_tokens": 3307,
+    "output_tokens": 2274
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 22.3,
+      "usage": {
+        "input_tokens": 1059,
+        "output_tokens": 1103
+      },
+      "ok": false,
+      "errors": [
+        "render je pomalý: průměr 10.20 ms, limit 5.00 ms (odhad na Pi 40.8 ms při 20 FPS) – zjednoduš výpočet, předpočítej v init(), vektorizuj"
+      ],
+      "warnings": [
+        "obraz je hodně světlý (průměr 172/255) – na LED matici je lepší tmavé pozadí"
+      ],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 10.204,
+        "p95_ms": 11.358,
+        "max_ms": 11.925,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 40.816,
+        "black_frames": 0,
+        "mean_level": 172.1
+      }
+    },
+    {
+      "attempt": 2,
+      "seconds": 23.8,
+      "usage": {
+        "input_tokens": 2248,
+        "output_tokens": 1171
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "obraz je hodně světlý (průměr 111/255) – na LED matici je lepší tmavé pozadí"
+      ],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 2.622,
+        "p95_ms": 2.978,
+        "max_ms": 3.421,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 10.487,
+        "black_frames": 0,
+        "mean_level": 110.9
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "obraz je hodně světlý (průměr 111/255) – na LED matici je lepší tmavé pozadí"
+    ],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 2.622,
+      "p95_ms": 2.978,
+      "max_ms": 3.421,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 10.487,
+      "black_frames": 0,
+      "mean_level": 110.9
+    },
+    "speedup": 4.0,
+    "name": "gentle_snowfall",
+    "fps": 20,
+    "duration": 30.0
+  }
+}
