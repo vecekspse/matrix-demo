@@ -1,0 +1,3 @@
+# Overeno na PC (Python 3.14). Na Pi doplnit/overit verze z apt nebo venv.
+numpy==2.5.5
+Pillow==13.0.0

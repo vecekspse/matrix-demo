@@ -1,0 +1,3 @@
+# Generator (generator/) navic k zakladnim zavislostem. Prehravac je nepotrebuje.
+-r requirements.txt
+anthropic==2.11.0

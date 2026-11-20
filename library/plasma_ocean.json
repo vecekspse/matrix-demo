@@ -1,0 +1,29 @@
+{
+  "name": "plasma_ocean",
+  "prompt": null,
+  "model": "manual",
+  "created": "2026-11-20",
+  "fps": 20,
+  "duration": 45.0,
+  "mean_frame_ms": 0.095,
+  "validation": {
+    "file": "library/plasma_ocean.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.095,
+      "p95_ms": 0.113,
+      "max_ms": 0.157,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 0.378,
+      "black_frames": 0,
+      "mean_level": 65.6
+    },
+    "speedup": 4.0,
+    "name": "plasma_ocean",
+    "fps": 20,
+    "duration": 45.0
+  }
+}

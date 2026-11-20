@@ -1,0 +1,18 @@
+# Prehravac animaci na LED matici. Bezi jako root (GPIO); animace samotne
+# bezi v podprocesech jako uzivatel nobody.
+# Uprav cestu, pokud projekt na Pi neni v /home/pi/matrix-demo.
+#   sudo cp deploy/matrix-player.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now matrix-player
+[Unit]
+Description=LED matrix animation player
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/matrix-demo
+ExecStart=/home/pi/matrix-demo/.venv/bin/python -m runner.player
+Restart=always
+RestartSec=5
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target

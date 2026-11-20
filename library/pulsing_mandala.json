@@ -1,0 +1,106 @@
+{
+  "name": "pulsing_mandala",
+  "prompt": "pulsing mandala",
+  "backend": "openai",
+  "model": "Qwen3.8-27B",
+  "created": "2026-11-20T14:19:31+01:00",
+  "fps": 20,
+  "duration": 30.0,
+  "mean_frame_ms": 0.198,
+  "attempts": 3,
+  "usage": {
+    "input_tokens": 5737,
+    "output_tokens": 3626
+  },
+  "attempt_log": [
+    {
+      "attempt": 1,
+      "seconds": 26.3,
+      "usage": {
+        "input_tokens": 1055,
+        "output_tokens": 1337
+      },
+      "ok": false,
+      "errors": [
+        "všechny snímky jsou černé",
+        "animace je statická – snímky se v čase nemění"
+      ],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.164,
+        "p95_ms": 0.199,
+        "max_ms": 0.295,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.657,
+        "black_frames": 121,
+        "mean_level": 0.0
+      }
+    },
+    {
+      "attempt": 2,
+      "seconds": 23.3,
+      "usage": {
+        "input_tokens": 2441,
+        "output_tokens": 1137
+      },
+      "ok": false,
+      "errors": [
+        "všechny snímky jsou černé",
+        "animace je statická – snímky se v čase nemění"
+      ],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.169,
+        "p95_ms": 0.198,
+        "max_ms": 0.221,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.677,
+        "black_frames": 121,
+        "mean_level": 0.0
+      }
+    },
+    {
+      "attempt": 3,
+      "seconds": 23.6,
+      "usage": {
+        "input_tokens": 2241,
+        "output_tokens": 1152
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "frames_tested": 121,
+        "mean_ms": 0.198,
+        "p95_ms": 0.282,
+        "max_ms": 0.448,
+        "budget_ms": 5.0,
+        "est_pi_mean_ms": 0.792,
+        "black_frames": 0,
+        "mean_level": 44.0
+      }
+    }
+  ],
+  "validation": {
+    "file": "animation.py",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "frames_tested": 121,
+      "mean_ms": 0.198,
+      "p95_ms": 0.282,
+      "max_ms": 0.448,
+      "budget_ms": 5.0,
+      "est_pi_mean_ms": 0.792,
+      "black_frames": 0,
+      "mean_level": 44.0
+    },
+    "speedup": 4.0,
+    "name": "pulsing_mandala",
+    "fps": 20,
+    "duration": 30.0
+  }
+}
